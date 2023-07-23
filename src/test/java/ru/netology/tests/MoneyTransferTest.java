@@ -92,7 +92,7 @@ public class MoneyTransferTest {
     @Test
     public void shouldNotTransferMoneyMoreThanABalance() {
         var dashboardPage = new DashboardPage();
-        String aboveBalance = String.valueOf(dashboardPage.getCardBalance("1") + 20000);
+        String aboveBalance = String.valueOf(dashboardPage.getCardBalance("1") + 30000);
         int expectedFirstCardBalance = dashboardPage.getCardBalance("1");
         int expectedSecondCardBalance = dashboardPage.getCardBalance("2");
         dashboardPage.getMoneyTransferFromFirstToSecondCard();
